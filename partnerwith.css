@@ -1,0 +1,298 @@
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+
+/* Specific styles for our page */
+
+.hero {
+  background-image: url('https://example.com/hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 48px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.feature {
+  flex-basis: calc(33.33% - 20px);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.feature h2 {
+  color: #007bff;
+}
+
+.feature p {
+  color: #555;
+}
+
+.call-to-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.call-to-action button {
+  font-size: 24px;
+}
+
+.quote {
+  background-color: #007bff;
+  color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.quote p {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.quote cite {
+  display: block;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.footer a {
+  color: #fff;
+}
+/* Center align the content within headings */
+h2 {
+  text-align: center;
+}
+
+/* Center align the content within subheadings */
+h3 {
+  text-align: center;
+}
+
+/* Center align the content within benefits and partners */
+.benefits,
+.partners {
+  text-align: center;
+}
+main {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url('image8.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+
+/* Set background color to black */
+body {
+  background-color: black;
+}
+
+/* Set text color to white */
+body {
+  color: white;
+}
+
+/* Set text color to green */
+h2, li {
+  color: green;
+}
+
+/* Set text color to red */
+h2, ul {
+  color: red;
+}
+h2 {
+  font-size: 5em; /* Increase the font size to 2 times the default size */
+  font-weight: bold; /* Make the font bold */
+}
+
+ul li {
+  font-size: 2em; /* Increase the font size to 1.2 times the default size */
+  font-weight: 600; /* Make the font semi-bold */
+}
+.partner p {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+
+
+@media screen
+/* Large screens */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav li {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+/* Medium screens */
+@media screen and (max-width: 960px) {
+  .container {
+    width: 90%;
+  }
+  
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav li {
+    margin-bottom: 20px;
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+
+  .header {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+
+  .nav li {
+    margin-right: 15px;
+  }
+}

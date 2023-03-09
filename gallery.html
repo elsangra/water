@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gallery</title>
+
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="homepage.css">
+  <link rel="stylesheet" type="text/css" href="font-6/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="link rel=" stylesheet " href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css ">
+
+
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+.gallery img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+    </style>
+
+</head>
+<body>
+
+  <!-- ################################################################################################ -->
+
+      <header>
+    <div class="logo-container">
+    <div class="logo-text"></div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Coat_of_arms_of_Kenya_%28Official%29.svg" alt="Logo" class="logo-image">
+  </div>
+    <div class="navbar">
+      <div class="logo"><a href="#">MoWIS</a></div>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project1.html">Project</a></li>
+        <li><a href="partnerwith.html">Partner with Us</a></li>
+        <li><a href="partner.html">Contact Us</a></li>
+        <li><a href="contact_us.html">About Us</a></li>
+      </ul>
+      <a href="water.go.ke" class="action_btn">Ministry Homepage</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project1.html">Project</a></li>
+        <li><a href="partnerwith.html">Partner with us</a></li>
+        <li><a href="partner.html">Contact Us</a></li>
+        <li><a href="contact_us.html">About Us</a></li>
+        <li><a href="www.water.go.ke" class="action_btn">Ministry Homepage</a></li>
+      </div>
+    </div>
+
+  </header>
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn i');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+
+    toggleBtn.onclick = function() {
+      dropDownMenu.classList.toggle('open');
+      const isOpen = dropDownMenu.classList.contains('open');
+
+      toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    }
+  </script>
+    </header>
+    <div class="gallery">
+        <img src="image1.jpeg" alt="Image 1">
+        <img src="image2.jpeg" alt="Image 2">
+        <img src="image3.jpeg" alt="Image 3">
+        <img src="image4.jpeg" alt="Image 4">
+        <img src="image5.jpeg" alt="Image 5">
+        <img src="image6.jpeg" alt="Image 6">
+        <img src="image7.jpeg" alt="Image 7">
+    </div>
+
+<div class="gallery">
+ <img src="pict1">
+    </div>
+<footer>
+<div class="container-fluid bg-grey py-5 ">
+    <div class="container">
+       <div class="row ">
+          <div class="col-md-6 ">
+             <div class="row ">
+                <div class="col-md-6 ">
+                   <div class="logo-part ">
+                      <img src="harambee.png " class="w-50 logo-footer " >
+                      <p>MINISTRY OF WATER,SANITATION AND IRRIGATION</p>
+                      <p>Maji House, Upper hill, Off Ngong Road, Nairobi Telephone: +254 0202716103, 4900000 Fax: +254 0202727622 Email: ps@water.go.ke.Website: http://www.water.go.ke.</p>
+                   </div>
+                </div>
+                <div class="col-md-6 px-4 ">
+                   <h6> About Ministry</h6>
+                   <p>"MAJI NYUMBANI INITIATIVE "</p>
+                   <p>Copyright@:  Ministry of Water, Sanitation and Iriigation: 2023</p>
+                   <a href="login.html " class="btn-footer "> More Info </a><br>
+                   <a href="contact_us.html " class="btn-footer "> Contact Us</a>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-6 ">
+             <div class="row ">
+                <div  class="col-md-6 px-4 ">
+                   <h6> Help us</h6>
+                   <div class="row ">
+                      <div class="col-md-6 ">
+                         <ul>
+                            <li> <a href="index.html"> Home</a> </li>
+                            <li> <a href="login.html "> Preference</a> </li>
+                            <li> <a href="contact_us.html "> Contact Us</a> </li>
+                           
+                         </ul>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-md-6 ">
+                   <h6> Social Media</h6>
+                   <div class="social ">
+                      <a href=" "><i class="fa fa-facebook " aria-hidden="true "></i></a>
+                      <a href=" "><i class="fa fa-instagram " aria-hidden="true "></i></a>
+                   </div>
+                   <form class="form-footer my-3 ">
+                      <input type="text "  placeholder="search here.... " name="search ">
+                      <input type="button " value="Go " >
+                   </form>
+                   <p>Ministry of Water, Sanitation and Irrigation: 2023</p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    </div> 
+</div>
+</footer>
+</body>
+</html>
+

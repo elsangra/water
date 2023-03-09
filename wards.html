@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project#</title>
+  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" type="text/css" href="projects.css">
+  <link rel="stylesheet" type="text/css" href="font-6/css/all.css">
+  <style>
+    .logo {
+      float: left;
+    }
+
+    .links {
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="#">MoWIS</a>
+        <div class="logo">
+  <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Coat_of_arms_of_Kenya_%28Official%29.svg/250px-Coat_of_arms_of_Kenya_%28Official%29.svg.png" style="width: 100px; height: 100px;"></a>
+</div>
+
+      </div>
+      <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="login.html">Preference</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="contact_us.html">About Us</a></li>
+      </ul>
+      <a href="#" class="action_btn">Go Back</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Project.html">Project</a></li>
+        <li><a href="login.html">Preference</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="contact_us.html">About Us</a></li>
+        <li><a href=index.html class="action_btn">Go Back</a></li>
+      </div>
+    </div>
+  </header>
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn i');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+
+    toggleBtn.onclick = function() {
+      dropDownMenu.classList.toggle('open');
+      const isOpen = dropDownMenu.classList.contains('open');
+
+      toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    }
+  </script>
+</body>
+</html>
